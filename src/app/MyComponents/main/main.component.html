@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <mat-toolbar color="primary" class="mat-elevation-z6">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon aria-label="label">menu</mat-icon>
+      </button>
+    </div>
+
+    <a mat-button class="myNav" routerLink="home">
+      <span> Biuro podróży </span></a
+    >
+    <span class="spacer"></span>
+
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button routerLink="discover">Sprawdź gdzie chcesz lecieć |</a>
+      <a mat-button routerLink="weatherInfo">Sprawdź pogodę |</a>
+    </div>
+  </mat-toolbar>
+
+  <mat-card class="jumbotron">
+    <mat-card-content>
+      <h1 class="fontStyle">Zapraszamy Na</h1>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-sidenav-container fxFlexFill class="sidecontainer">
+    <mat-sidenav
+      #sidenav
+      fxLayout="column"
+      fxHide.gt-sm="true"
+      mode="over"
+      opened="false"
+    >
+      <div class="sidenav" fxLayout="column">
+        <a mat-button routerLink="discover">Sprawdź miejsca</a>
+        <a mat-button routerLink="weatherInfo">Pogoda</a>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

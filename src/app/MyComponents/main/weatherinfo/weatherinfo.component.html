@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="card border-primary shadow m-5">
+        <div class="card-body">
+            <h4 class="card-title">Check weather</h4>
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col-6">
+                    <input class="m-3" [(ngModel)]="cityName" type="text" placeholder="input city name">
+                    <button (click)="btnAcceptClick()" type="button" class="btn btn-primary m-3">Accept</button>
+                </div>
+
+
+                <div class="col-6">
+
+                    <div *ngIf="showInfoModule" class="card border-primary">
+                        <div class="card-body">
+                            <h4 class="card-title">{{modelWeather.cityName}} <span><img
+                                        src="{{modelWeather.icon}}" /></span></h4>
+
+                            <h3> {{modelWeather.temperature}} &deg;C </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
