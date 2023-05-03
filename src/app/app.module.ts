@@ -8,8 +8,11 @@ import { MyMaterialModule } from './mymaterial.module';
 import { HomeComponent } from './MyComponents/main/home/home.component';
 import { WeatherinfoComponent } from './MyComponents/main/weatherinfo/weatherinfo.component';
 import { DiscoverComponent } from './MyComponents/main/discover/discover.component';
+import { CheckListComponent } from './MyComponents/main/check-list/check-list.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { RezerwacjaComponent } from './MyComponents/main/rezerwacja/rezerwacja.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     DiscoverComponent,
     WeatherinfoComponent,
+    RezerwacjaComponent,
+    CheckListComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +31,8 @@ import { FormsModule } from '@angular/forms';
     MyMaterialModule,
     HttpClientModule,
     FormsModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

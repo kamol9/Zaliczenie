@@ -1,0 +1,91 @@
+<section class="example-section">
+  <form>
+    Lista Rzeczy do zabrania
+    <ul class="none">
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input matInput placeholder="" value="animacje" />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder=""
+              value="6 elementow material deisgn: check box, chip, data picker, grid list, button, input"
+            />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder=""
+              value="5 komponentow: check-list, discover, home, rezerwacja, weatherinfo"
+            />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input matInput placeholder="" value="formularz " />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder=""
+              value="api/ routing (ale profesora)"
+            />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input matInput placeholder="" value="child-parent" />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+      <li>
+        <mat-checkbox>
+          <mat-form-field>
+            <input
+              matInput
+              placeholder=""
+              value="Do zrobienia, parent-child  "
+            />
+          </mat-form-field>
+        </mat-checkbox>
+      </li>
+    </ul>
+
+    <span class="example-list-section">
+      <ul class="none" *ngFor="let listElement of listElements">
+        <li>
+          <mat-checkbox>
+            <mat-form-field>
+              <input matInput placeholder="dodaj element" />
+            </mat-form-field>
+          </mat-checkbox>
+        </li>
+      </ul>
+      <button mat-button (click)="addListElement()" color="primary">
+        Dodaj nowy punkt
+      </button>
+    </span>
+    <br />
+    <button mat-button type="submit" color="secondary">Zapisz Liste</button>
+  </form>
+</section>

@@ -4,13 +4,19 @@
     [colspan]="tile.cols"
     [rowspan]="tile.rows"
     [style.background]="tile.color"
+    class="my-tile"
   >
-    {{ tile.text }}
-    <img [src]="tile.imageUrl" />
+    <div class="my-tile__wraper">
+      <mat-chip-listbox class="my-tile__title">
+        <mat-chip-option>{{ tile.text }}</mat-chip-option>
+      </mat-chip-listbox>
+
+      <img [src]="tile.imageUrl" />
+    </div>
   </mat-grid-tile>
 </mat-grid-list>
 <!------------------------------------------------------------------------->
-<mat-grid-list cols="2" rowHeight="100px" gutterSize=" 10px">
+<mat-grid-list class="magrin" cols="2" rowHeight="100px" gutterSize="10px">
   <mat-grid-tile
     *ngFor="let tile2 of tiles2"
     [colspan]="tile2.cols"
@@ -18,7 +24,9 @@
     [style.background]="tile2.color"
     class="my-tile"
   >
-    {{ tile2.text }},
+    <mat-chip-listbox class="my-tile__title">
+      <mat-chip-option>{{ tile2.text }}</mat-chip-option>
+    </mat-chip-listbox>
     <img [src]="tile2.imageUrl" />
   </mat-grid-tile>
 </mat-grid-list>
