@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RezerwacjaComponent } from './MyComponents/main/rezerwacja/rezerwacja.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { WeatherapiComponent } from './MyComponents/main/weatherapi/weatherapi.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     WeatherinfoComponent,
     RezerwacjaComponent,
     CheckListComponent,
+    WeatherapiComponent,
   ],
   imports: [
     BrowserModule,
