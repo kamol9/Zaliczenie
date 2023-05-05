@@ -6,6 +6,7 @@ import { WeatherinfoComponent } from './MyComponents/main/weatherinfo/weatherinf
 import { RezerwacjaComponent } from './MyComponents/main/rezerwacja/rezerwacja.component';
 import { CheckListComponent } from './MyComponents/main/check-list/check-list.component';
 import { WeatherapiComponent } from './MyComponents/main/weatherapi/weatherapi.component';
+import { Weatherapiv2Component } from './MyComponents/main/weatherapiv2/weatherapiv2.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'rezerwacja', component: RezerwacjaComponent },
   { path: 'check-list', component: CheckListComponent },
   { path: 'weatherapi', component: WeatherapiComponent },
+  { path: 'weatherapiv2', component: Weatherapiv2Component },
 ];
 
 @NgModule({
